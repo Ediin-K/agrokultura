@@ -381,3 +381,45 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.logo-slider {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	padding: 3rem 0;
+	background: #fff;
+	margin-top: 70px;
+}
+
+.logo-slider h2 {
+	font-weight: 600;
+	align-self: flex-start;
+	margin-left: 5%;
+	margin-bottom: 50px;
+}
+
+.logo-track {
+	display: inline-block;
+	white-space: nowrap;
+	animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+	width: 150px;
+	margin: 0 3rem;
+	vertical-align: middle;
+	transition: transform 0.3s ease;
+}
+
+.logo-track img:hover {
+	transform: scale(1.2);
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
