@@ -302,7 +302,7 @@
 }
 
 .deals-card:hover {
-	box-shadow: 2px 2px 10px rgb(176, 176, 176);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .deals-card:hover::before {
@@ -499,4 +499,120 @@
 
 .faq-item-wrapper.open .faq-summary .icon {
 	transform: rotate(180deg);
+}
+
+.footer {
+	background-color: hsl(149, 66%, 39%);
+	padding: 60px 5%;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+.footer p {
+	font-size: 12px;
+}
+
+.footer img {
+	width: 150px;
+}
+
+.footer-section-1 {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-item h5 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-item a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+
+.email-footer {
+	width: 100%;
+	padding: 10px 45px 10px 15px; /* space for button inside */
+	border-radius: 30px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	overflow-x: hidden;
+	width: 400px;
+	height: 50px;
+}
+
+.input-wrapper input {
+	flex: 1;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	outline: none;
+	background-color: #22a561;
+	color: white;
+}
+
+.input-wrapper input::placeholder {
+	color: white;
+}
+
+.input-wrapper button {
+	border: none;
+	background-color: #22a561;
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-links-containter {
+	display: flex;
+	gap: 150px;
+}
+
+.footer-section-2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright {
+	display: flex;
+	color: white;
+	gap: 10px;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+
+.socials {
+	display: flex;
+	gap: 15px;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.socials a {
+	color: white;
 }
