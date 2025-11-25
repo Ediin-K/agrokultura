@@ -1,201 +1,198 @@
-/* Body & font */
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f9f2;
-  color: #333;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
 }
 
-/* Top Navigation */
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f9f2;
+	color: #333;
+}
+
 .top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #66bb6a;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap; /* për responsivitet */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #66bb6a;
+	padding: 10px 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+	flex-wrap: wrap;
 }
 
 .top-nav .logo a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 5px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 5px;
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap; /* link-et shkojnë në rreshta nëse nuk ka hapësirë */
-  gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 
 .nav-links a {
-  padding: 8px 12px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+	padding: 8px 12px;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 6px;
+	transition: all 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  background-color: #388e3c;
+	background-color: #388e3c;
 }
 
-/* Sidebar */
 .sidebar-nav {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  width: 250px;
-  height: calc(100vh - 80px);
-  overflow-y: auto;
-  background-color: #e8f5e9;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 250px;
+	height: calc(100vh - 80px);
+	overflow-y: auto;
+	background-color: #e8f5e9;
+	padding: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-nav h3 {
-  color: #2e7d32;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 1.4em;
+	color: #2e7d32;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 1.4em;
 }
 
 .sidebar-nav ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 .sidebar-nav ul li {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .sidebar-nav a {
-  display: block;
-  padding: 8px 12px;
-  color: #2e7d32;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
+	display: block;
+	padding: 8px 12px;
+	color: #2e7d32;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	font-weight: 500;
 }
 
 .sidebar-nav a:hover {
-  background: linear-gradient(90deg, #a5d6a7, #66bb6a);
-  color: #fff;
-  transform: translateX(5px);
+	background: linear-gradient(90deg, #a5d6a7, #66bb6a);
+	color: #fff;
+	transform: translateX(5px);
 }
 
 .sidebar-nav a.active {
-  background-color: #388e3c;
-  color: #fff;
+	background-color: #388e3c;
+	color: #fff;
 }
 
-/* Content */
 .content {
-  margin-left: 270px;
-  padding: 40px;
+	margin-left: 270px;
+	padding: 40px;
 }
 
 .page-header h1 {
-  font-size: 2.2em;
-  color: #1b5e20;
-  margin-bottom: 10px;
+	font-size: 2.2em;
+	color: #1b5e20;
+	margin-bottom: 10px;
 }
 
 .page-header .updated {
-  color: #616161;
-  font-size: 0.9em;
+	color: #616161;
+	font-size: 0.9em;
 }
 
 section {
-  background-color: #ffffff;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #ffffff;
+	padding: 25px;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-  color: #2e7d32;
-  margin-bottom: 15px;
+	color: #2e7d32;
+	margin-bottom: 15px;
 }
 
 section a {
-  color: #1e7d1e;
-  font-weight: bold;
+	color: #1e7d1e;
+	font-weight: bold;
 }
 
-/* Footer */
 .page-footer {
-  text-align: center;
-  padding: 25px 10px;
-  background-color: #e8f5e9;
-  color: #2e7d32;
-  margin-top: 40px;
-  border-top: 1px solid #c8e6c9;
+	text-align: center;
+	padding: 25px 10px;
+	background-color: #e8f5e9;
+	color: #2e7d32;
+	margin-top: 40px;
+	border-top: 1px solid #c8e6c9;
 }
 
-/* Responsiveness */
-
-/* Tablet dhe ekran më të vogël */
 @media (max-width: 900px) {
-  .sidebar-nav {
-    width: 200px;
-    padding: 15px;
-  }
-  .content {
-    margin-left: 220px;
-    padding: 20px;
-  }
-  .top-nav .logo a {
-    font-size: 1.6rem;
-  }
-  .nav-links a {
-    padding: 6px 10px;
-    font-size: 0.95rem;
-  }
+	.sidebar-nav {
+		width: 200px;
+		padding: 15px;
+	}
+	.content {
+		margin-left: 220px;
+		padding: 20px;
+	}
+	.top-nav .logo a {
+		font-size: 1.6rem;
+	}
+	.nav-links a {
+		padding: 6px 10px;
+		font-size: 0.95rem;
+	}
 }
 
-/* Telefona të vegjël */
 @media (max-width: 600px) {
-  .sidebar-nav {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .content {
-    margin-left: 0;
-    padding: 15px;
-  }
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .nav-links {
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .nav-links a {
-    margin: 5px 0;
-    width: 48%;
-    text-align: center;
-  }
+	.sidebar-nav {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.content {
+		margin-left: 0;
+		padding: 15px;
+	}
+	.top-nav {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+	.nav-links {
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.nav-links a {
+		margin: 5px 0;
+		width: 48%;
+		text-align: center;
+	}
 }
