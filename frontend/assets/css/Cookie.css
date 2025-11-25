@@ -1,0 +1,192 @@
+/* Body & font */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0; /* ngjyrë e lehtë portokalli */
+  color: #333;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #ff8a50,
+    #ff7043
+  ); /* gradient portokalli */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.top-nav .logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links a {
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #d84315;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar */
+.sidebar-nav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  background-color: #fff3e0; /* portokalli i lehtë */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav h3 {
+  color: #e65100; /* portokalli i theksuar */
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 8px 12px;
+  color: #bf360c; /* portokalli më i thellë */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sidebar-nav a:hover {
+  background: linear-gradient(90deg, #ffb74d, #ff8a65);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.sidebar-nav a.active {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  margin-left: 270px;
+  padding: 40px;
+}
+
+/* Page header */
+.page-header h1 {
+  font-size: 2.2em;
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.page-header .updated {
+  color: #616161;
+  font-size: 0.9em;
+}
+
+/* Sections */
+section {
+  background-color: #fff3e0; /* portokalli i lehtë për sekcionet */
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #e65100;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.page-footer {
+  text-align: center;
+  padding: 25px 10px;
+  background-color: #fff3e0;
+  color: #bf360c;
+  margin-top: 40px;
+  border-top: 1px solid #ffccbc;
+}
+
+/* Responsivitet */
+@media (max-width: 900px) {
+  .sidebar-nav {
+    width: 200px;
+    padding: 15px;
+  }
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content {
+    margin-left: 0;
+    padding: 15px;
+  }
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    margin: 5px 0;
+    width: 48%;
+    text-align: center;
+  }
+}
