@@ -74,6 +74,7 @@ body {
 	justify-content: center;
 	color: black;
 	transition: 0.3s ease;
+	gap: 20px;
 }
 
 #produktet {
