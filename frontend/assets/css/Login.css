@@ -7,6 +7,25 @@
 	font-family: "Poppins", sans-serif;
 }
 
+.back-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	display: inline-block;
+	padding: 10px 18px;
+	background: #22a561;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 12px;
+	font-weight: 600;
+	transition: 0.25s ease;
+	z-index: 9999;
+}
+
+.back-btn:hover {
+	background: #176b3f;
+}
+
 body {
 	background: linear-gradient(-45deg, #248c58, #70e3a4, #2e7d32, #a5d6a7);
 	background-size: 400% 400%;
@@ -171,7 +190,7 @@ h2 {
 }
 
 .sign-in {
-	background: #24a167;
+	background: #22a561;
 	color: #fff;
 	border: none;
 	padding: 12px;
@@ -184,7 +203,7 @@ h2 {
 
 .sign-in:hover {
 	transform: translateY(-2px);
-	background: #1b5e20;
+	background: #176b3f;
 }
 
 .sign-up {
