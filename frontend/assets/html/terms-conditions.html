@@ -5,7 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Agrokultura - Termat dhe Kushtet</title>
-	<link rel="stylesheet" href="../css/terms-conditions.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="../css/policies.css" />
 </head>
 
 <body>
@@ -298,24 +299,6 @@
 			</footer>
 		</main>
 	</div>
-
-	<script>
-		// add active class based on scroll position
-		const sections = document.querySelectorAll('main .content section');
-		const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-		function activateLink() {
-			let index = sections.length;
-			while (--index && window.scrollY + 120 < sections[index].offsetTop) { }
-			navLinks.forEach(link => link.classList.remove('active'));
-			const id = sections[index].id;
-			const active = document.querySelector('.sidebar-nav a[href="#' + id + '"]');
-			if (active) active.classList.add('active');
-		}
-
-		activateLink();
-		window.addEventListener('scroll', activateLink);
-	</script>
 </body>
 
 </html>

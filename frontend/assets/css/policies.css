@@ -160,7 +160,7 @@ body {
 .sidebar-nav a:hover {
 	background: linear-gradient(90deg, #a5d6a7, #66bb6a);
 	color: #fff;
-	transform: translateX(5px);
+	/* transform: translateX(5px); */
 }
 
 .sidebar-nav a.active {
