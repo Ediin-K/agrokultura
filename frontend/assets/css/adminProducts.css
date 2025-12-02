@@ -69,8 +69,84 @@ body {
 	border-radius: 5px;
 }
 
+.search-bar {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+}
+
 .search-bar input {
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
-	padding: 20px 0px;
+	padding: 15px 5px;
+	border: 1px solid #22a561;
+	background-color: #f4f4f4;
+}
+
+.search-bar button {
+	padding: 15px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+	background-color: #22a561;
+}
+
+.product-table {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+.product-table-box {
+	background: #22a561;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+	padding: 10px;
+	border-bottom: 1px solid #f4f4f4;
+	text-align: center;
+}
+
+.action-btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.action-btns button {
+	cursor: pointer;
+	border: none;
+	padding: 5px 20px;
+	border-radius: 3px;
+}
+
+.btn-1 {
+	background-color: #ffc106;
+}
+
+.btn-2 {
+	background-color: #dc3545;
+}
+
+.add-product {
+	width: 100px;
+	padding: 15px 20px;
+	display: flex;
+}
+
+.add-product button {
+	color: white;
+}
+
+.bar {
+	display: flex;
+	gap: 5px;
+	width: 100%;
 }
