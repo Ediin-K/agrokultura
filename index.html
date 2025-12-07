@@ -36,6 +36,33 @@
                 <li><a href="./frontend/pages/forms/login.html">Log in</a></li>
             </ul>
         </div>
+        <div class="hamburger-menu">
+            <i class="bi-list" id="hamburger"></i>
+
+            <nav class="mobile-menu" id="mobileMenu">
+                <ul class="menu-items">
+                    <li><a href="#" class="active">Ballina</a></li>
+                    <li class="dropdown-h">
+                        <a href="#" id="produktet-h">Produktet <i class="bi bi-chevron-down"></i></a>
+                        <ul class="dropdown-menu-h">
+                            <li><a href="#">Mjete</a></li>
+                            <li><a href="#">Ngjyra & Furnizim</a></li>
+                            <li><a href="#">Gypa</a></li>
+                            <li><a href="#">Hidraulike</a></li>
+                            <li><a href="#">Elektrike</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mbi Ne</a></li>
+                    <li><a href="#">Na Kontaktoni</a></li>
+                    <li><a href="#"><i class="bi bi-cart" style="font-size: 1.3rem;"></i> My
+                            cart</a></li>
+                    <li style="padding: 0px 20px; background-color: #22a561; width: 50px; border-radius: 10px;">
+                        <a style="color: white;" href="./frontend/pages/forms/login.html">Log in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </nav>
     <div class="main">
         <div class="hero">
@@ -180,36 +207,47 @@
             <h2>Pyetje të Bëra Shpesh</h2>
             <div class="faq-section">
                 <div class="faq-item-wrapper">
-                    <div class="faq-summary">What is your return policy? <span class="icon">+</span></div>
+                    <div class="faq-summary">Cila është politika juaj e kthimit? <span class="icon">+</span></div>
                     <div class="faq-content">
-                        <p>We accept returns within 30 days of purchase. Products must be in original condition.</p>
+                        <p>Ne pranojmë kthime brenda 30 ditëve nga blerja. Produktet duhet të jenë në gjendjen e tyre
+                            origjinale. Për më shumë informata klikoni <a
+                                href="./frontend/assets/html/refundPolicy.html"
+                                style="text-decoration: none; color: #22a561;">këtu.</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="faq-item-wrapper">
-                    <div class="faq-summary">How long does shipping take? <span class="icon">+</span></div>
+                    <div class="faq-summary">Sa kohë zgjat dërgesa? <span class="icon">+</span></div>
                     <div class="faq-content">
-                        <p>Shipping typically takes 5-7 business days depending on your location.</p>
+                        <p>Dërgesa zakonisht zgjat 5–7 ditë pune, varësisht nga lokacioni juaj.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-wrapper">
-                    <div class="faq-summary">Do you offer international shipping? <span class="icon">+</span></div>
+                    <div class="faq-summary">A ofroni dërgesa ndërkombëtare? <span class="icon">+</span></div>
                     <div class="faq-content">
-                        <p>Yes, we ship internationally. Shipping fees and delivery times vary by country.</p>
+                        <p>Po, ne dërgojmë edhe ndërkombëtarisht. Tarifat dhe koha e dorëzimit ndryshojnë sipas shtetit.
+                        </p>
                     </div>
                 </div>
 
                 <div class="faq-item-wrapper">
-                    <div class="faq-summary">How can I contact customer support? <span class="icon">+</span></div>
+                    <div class="faq-summary">Si mund të kontaktoj mbështetjen e klientit? <span class="icon">+</span>
+                    </div>
                     <div class="faq-content">
-                        <p>You can contact us via email at support@example.com or call us at (123) 456-7890.</p>
+                        <p>Mund të na kontaktoni përmes email-it në support@agrokultura.com ose të na telefononi në
+                            (123)
+                            456-7890.</p>
                     </div>
                 </div>
                 <div class="faq-item-wrapper">
-                    <div class="faq-summary">How can I contact customer support? <span class="icon">+</span></div>
+                    <div class="faq-summary">Çfarë mënyrash pagesash pranoni? <span class="icon">+</span></div>
                     <div class="faq-content">
-                        <p>You can contact us via email at support@example.com or call us at (123) 456-7890.</p>
+                        <p> Ne ofrojmë një gamë të gjerë mënyrash pagesash për të përshtatur nevojat e klientëve tanë,
+                            duke përfshirë kartat e kreditit dhe debitit, pagesën në dorëzim, dhe transferet bankare. Të
+                            gjitha transaksionet kryhen përmes sistemeve të enkriptuara dhe të sigurta, në mënyrë që të
+                            dhënat tuaja të jenë të mbrojtura nga çdo përdorim i paautorizuar.</p>
                     </div>
                 </div>
             </div>
@@ -257,6 +295,7 @@
 
     <script src="./frontend/assets/js/slider.js"></script>
     <script src="./frontend/assets/js/faq.js"></script>
+    <script src="./frontend/assets/js/hamburgerMenuToggler.js"></script>
 </body>
 
 </html>
