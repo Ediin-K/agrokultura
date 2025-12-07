@@ -3,12 +3,12 @@ const menu = document.getElementById("mobileMenu");
 const dropdown = document.querySelector(".dropdown-h");
 const produktetLink = document.getElementById("produktet-h");
 
-// Toggle mobile menu
+// Toggle menun
 hamburger.addEventListener("click", () => {
 	menu.classList.toggle("active");
 });
 
-// Toggle dropdown inside mobile menu
+// Toggle dropdownin
 produktetLink.addEventListener("click", (e) => {
 	e.preventDefault();
 	dropdown.classList.toggle("active");
