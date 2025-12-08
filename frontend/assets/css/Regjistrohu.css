@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -7,11 +7,24 @@
 	font-family: "Poppins", sans-serif;
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+	background: linear-gradient(-45deg, #248c58, #70e3a4, #2e7d32, #a5d6a7);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+	position: relative;
+	margin-top: 15%;
+}
+
+/* BACK BUTTON */
 .back-btn {
 	position: fixed;
 	top: 20px;
 	left: 20px;
-	display: inline-block;
 	padding: 10px 18px;
 	background: #22a561;
 	color: #fff;
@@ -26,20 +39,7 @@
 	background: #176b3f;
 }
 
-body {
-	font-family: "Poppins", sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	padding: 20px;
-	background: linear-gradient(-45deg, #248c58, #70e3a4, #2e7d32, #a5d6a7);
-	background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
-	position: relative;
-	overflow: hidden;
-}
-
+/* BACKGROUND FLOATING EFFECT */
 @keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
@@ -91,39 +91,70 @@ body::after {
 	}
 }
 
+/* WRAPPER */
 .wrapper {
-	display: flex;
 	width: 900px;
 	max-width: 100%;
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 	overflow: hidden;
-	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
 	position: relative;
 	z-index: 1;
+	padding: 40px;
 }
 
-.form-box,
-.info-box {
+.sign-up {
+	background: #22a561;
+	color: #fff;
+	border: none;
+	padding: 12px;
+	border-radius: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* FORM BOX */
+.form-box {
 	flex: 1 1 450px;
-	padding: 40px 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	z-index: 2;
-	position: relative;
+	text-align: left;
 }
 
-.info-box {
-	background: linear-gradient(135deg, #ffb380, #ffc299, #ffd1b3);
-	color: #fff;
+.terms {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 0;
+	width: 100%;
 }
 
-.form-box {
-	background: #ffffff;
+.terms label {
+	margin-bottom: 15px;
+}
+
+.login {
+	margin-top: 15px;
+}
+
+#terms {
+	width: auto;
+	margin-right: 15px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	width: 100%;
 }
 
 h2 {
@@ -134,16 +165,48 @@ h2 {
 .subtitle {
 	font-size: 14px;
 	margin-bottom: 20px;
+	color: #555;
 }
 
+/* INPUTS */
 .register-form input {
 	padding: 12px;
 	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	width: 100%;
+	font-size: 16px;
 }
 
+.register-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.register-form label {
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #22a561;
+}
+
+input[type="checkbox"] {
+	accent-color: #22a561; /* Or any other color value */
+}
+
+.form-fields {
+	display: flex;
+	gap: 10px;
+}
+
+/* BUTTONS */
 .create-account {
 	background: #4caf50;
 	color: #fff;
@@ -152,7 +215,9 @@ h2 {
 	border-radius: 8px;
 	font-weight: bold;
 	cursor: pointer;
-	transition: transform 0.2s ease, background 0.3s ease;
+	transition: 0.2s ease;
+	width: 100%;
+	margin-top: 5px;
 }
 
 .create-account:hover {
@@ -160,29 +225,13 @@ h2 {
 	background: #388e3c;
 }
 
-.back-login {
-	background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-	color: #fff;
-	border: none;
-	width: 300px;
-	padding: 12px 24px;
-	border-radius: 8px;
-	font-weight: bold;
-	margin-top: 20px;
-	cursor: pointer;
-	transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.back-login:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
+/* SOCIAL LOGIN */
 .social-login {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 .social {
@@ -190,13 +239,13 @@ h2 {
 	align-items: center;
 	gap: 10px;
 	padding: 12px;
-	border: none;
 	border-radius: 8px;
 	font-weight: 600;
 	cursor: pointer;
 	color: #fff;
 	font-size: 16px;
 	justify-content: center;
+	border: none;
 	transition: transform 0.2s ease;
 }
 
@@ -218,6 +267,7 @@ h2 {
 	background: #333;
 }
 
+/* DIVIDER */
 .divider {
 	text-align: center;
 	margin: 20px 0;
@@ -242,6 +292,7 @@ h2 {
 	background: #ccc;
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
 	.wrapper {
 		width: 100%;
@@ -249,34 +300,21 @@ h2 {
 }
 
 @media (max-width: 768px) {
-	body {
-		padding: 20px;
-	}
-
 	.wrapper {
-		flex-direction: column;
-	}
-
-	.form-box,
-	.info-box {
 		padding: 30px 25px;
-	}
-
-	.back-login {
-		width: 100%;
-		max-width: 300px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.social span {
 		display: none;
 	}
+
+	.form-fields {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 480px) {
-	.form-box,
-	.info-box {
+	.wrapper {
 		padding: 25px 20px;
 	}
 
@@ -288,8 +326,7 @@ h2 {
 		padding: 10px;
 	}
 
-	.create-account,
-	.back-login {
+	.create-account {
 		padding: 10px;
 		font-size: 14px;
 	}
