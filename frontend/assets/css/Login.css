@@ -5,6 +5,8 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .back-btn {
@@ -91,9 +93,9 @@ body::after {
 
 .wrapper {
 	display: flex;
-	width: 1000px;
+	width: 500px;
 	max-width: 100%;
-	height: 500px;
+	height: 550px;
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -102,25 +104,14 @@ body::after {
 	z-index: 1;
 }
 
-.login-box,
-.signup-box {
+.login-box {
 	flex: 1;
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.login-box {
 	background: #fff;
 	z-index: 2;
-}
-
-.signup-box {
-	background: linear-gradient(135deg, #ffb380, #ffc299, #ffd1b3);
-	color: #fff;
-	text-align: center;
-	position: relative;
 }
 
 h2 {
@@ -137,7 +128,8 @@ h2 {
 	display: flex;
 	gap: 15px;
 	justify-content: center;
-	margin-bottom: 20px;
+	align-items: center;
+	margin-bottom: 10px;
 }
 
 .social {
@@ -149,16 +141,15 @@ h2 {
 	color: #333;
 	font-size: 18px;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transition: transform 0.2s ease;
-}
-
-.social:hover {
-	transform: scale(1.1);
 }
 
 .divider {
 	text-align: center;
-	margin: 20px 0;
+	margin: 10px 0;
 	position: relative;
 	color: #aaa;
 }
@@ -183,10 +174,50 @@ h2 {
 
 .login-form input {
 	padding: 12px;
-	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	width: 100%;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form button {
+	align-self: center;
+	width: 100%;
+}
+
+.login-form label {
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.forgot {
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	transition: all 0.3s ease;
+}
+
+.reg {
+	font-size: 12px;
+	align-self: center;
+	font-weight: 500;
+	margin-top: 5px;
+	transition: all 0.3s ease;
+}
+
+.login-form a:hover {
+	color: #22a561;
+}
+
+.login-form a {
+	text-decoration: none;
+	color: #555;
 }
 
 .sign-in {
@@ -202,71 +233,13 @@ h2 {
 }
 
 .sign-in:hover {
-	transform: translateY(-2px);
 	background: #176b3f;
-}
-
-.sign-up {
-	background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-	color: #fff;
-	border: none;
-	width: 300px;
-	padding: 12px 24px;
-	border-radius: 8px;
-	font-weight: bold;
-	margin-top: 20px;
-	cursor: pointer;
-	transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.explore {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-	padding: 8px 16px;
-	border-radius: 6px;
-	font-size: 14px;
-	cursor: pointer;
-}
-
-.legal-links {
-	margin-top: 15px;
-	font-size: 13px;
-	text-align: center;
-	color: #555;
-}
-
-.legal-links a {
-	color: #0066cc;
-	text-decoration: none;
-	font-weight: 500;
-}
-
-.legal-links a:hover {
-	text-decoration: underline;
-}
-
-.legal-links span {
-	margin: 0 6px;
-	color: #999;
 }
 
 @media (max-width: 768px) {
 	.wrapper {
 		flex-direction: column;
 		height: auto;
-	}
-
-	.signup-box {
-		align-items: center;
-		padding: 30px;
-	}
-
-	.explore {
-		position: static;
-		margin-top: 20px;
+		margin: 0 5%;
 	}
 }
