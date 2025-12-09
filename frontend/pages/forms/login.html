@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kyçu & Regjistrohu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../../assets/css/Login.css" />
@@ -20,48 +19,29 @@
 
       <div class="social-buttons">
         <button class="social facebook">
-          <i class="fab fa-facebook-f"></i>
+          <i class="bi bi-facebook"></i>
         </button>
         <button class="social google">
-          <i class="fab fa-google-plus-g"></i>
+          <i class="bi bi-google"></i>
         </button>
         <button class="social apple">
-          <i class="fab fa-apple"></i>
+          <i class="bi bi-apple"></i>
         </button>
       </div>
 
       <div class="divider"><span>OSE</span></div>
 
       <form class="login-form">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Fjalëkalimi" required />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Shkruaj email-in tënd" id="email" name="email" required />
+        <label for="password">Fajlëkalimi</label>
+        <input type="password" id="password" name="password" placeholder="Shkruaj fjalëkalimin-in tënd" required
+          minlength="8" />
+        <p class="forgot"><a href="">Keni harraru fjalëkalimin?</a></p>
         <button type="submit" class="sign-in">Kyçu</button>
+        <p class="reg">Nuk keni llogari? <a href="./regjistrohu.html">Regjistrohu!</a></p>
       </form>
-
-      <!-- TERMS SECTION -->
-      <div class="legal-links">
-        <a href="../policies/terms-conditions.html">Termat e Përdorimit</a>
-        <span>•</span>
-        <a href="../policies/policy.html">Politika e Privatësisë</a>
-        <span>•</span>
-        <a href="../policies/cookie.html">Cookie Policy</a>
-        <span>•</span>
-        <a href="../policies/contactInfo.html">Informacione Kontakti</a>
-      </div>
     </div>
-
-    <div class="signup-box">
-      <h2>Jeni të rinj këtu?</h2>
-      <p class="subtitle">
-        Regjistrohuni dhe zbuloni një mori mundësish të reja!
-      </p>
-
-      <a href="./regjistrohu.html">
-        <button class="sign-up">Regjistrohu</button>
-      </a>
-      <button class="explore">Eksploro</button>
-    </div>
-  </div>
 </body>
 
 </html>
