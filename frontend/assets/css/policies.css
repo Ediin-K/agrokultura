@@ -36,7 +36,7 @@ body {
 	font-size: 16px;
 }
 
-.active {
+.nav-links.active {
 	border-bottom: 3px solid #22a561;
 }
 .nav-links {
@@ -359,6 +359,22 @@ section h2 {
 }
 
 .dropdown-h.active .dropdown-menu-h {
+	display: flex;
+}
+
+.dropdown-menu-h li ul {
+	display: none;
+	list-style: none;
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 5px;
+	flex-direction: column;
+	gap: 5px;
+	border-bottom: none;
+}
+
+/* Kur aktivizohet klasa aktive tregoji subkategorite */
+.dropdown-menu-h li.active ul {
 	display: flex;
 }
 

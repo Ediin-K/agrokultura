@@ -30,7 +30,7 @@
 	font-size: 16px;
 }
 
-.active {
+.nav-links.active {
 	border-bottom: 3px solid #22a561;
 }
 .nav-links {
@@ -684,6 +684,94 @@
 	color: white;
 }
 
+/* #hamburger {
+	font-size: 28px;
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 2000;
+	display: none;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+	flex-direction: column;
+	gap: 0;
+	position: fixed;
+	top: 60px;
+	right: 20px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+	width: 220px;
+	max-height: 90vh;
+	overflow-y: auto;
+	z-index: 1500;
+}
+
+.mobile-menu.active {
+	display: flex;
+}
+
+.menu-items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.menu-items li {
+	position: static;
+}
+
+.menu-items li.dropdown {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-items a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	display: block;
+	padding: 10px 0;
+	border: none;
+	transition: color 0.2s;
+}
+
+.menu-items a:hover,
+.menu-items a.active {
+	color: #22a561;
+}
+
+.dropdown-h {
+	border: none;
+}
+
+.dropdown-menu-h {
+	list-style: none;
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 5px;
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	position: static;
+}
+
+.dropdown-h.active .dropdown-menu-h {
+	display: flex;
+} */
+
 #hamburger {
 	font-size: 28px;
 	cursor: pointer;
@@ -769,6 +857,22 @@
 }
 
 .dropdown-h.active .dropdown-menu-h {
+	display: flex;
+}
+
+.dropdown-menu-h li ul {
+	display: none;
+	list-style: none;
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 5px;
+	flex-direction: column;
+	gap: 5px;
+	border-bottom: none;
+}
+
+/* Kur aktivizohet klasa aktive tregoji subkategorite */
+.dropdown-menu-h li.active ul {
 	display: flex;
 }
 
