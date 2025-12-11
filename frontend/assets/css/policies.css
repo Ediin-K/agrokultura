@@ -80,12 +80,15 @@ body {
 #produktet {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	gap: 5px;
 }
 
 .dropdown {
 	position: relative;
+}
+
+.bi-chevron-right {
+	font-size: 10px;
 }
 
 .dropdown-menu {
@@ -94,14 +97,55 @@ body {
 	top: 100%;
 	left: 0;
 	background: #22a561;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 	list-style: none;
 	padding: 10px 0;
-	min-width: 150px;
+	min-width: 200px;
 }
 
 .dropdown-menu li a {
 	display: block;
 	padding: 8px 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.dropdown-menu li ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background: #1e8e4f;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding: 10px 0;
+	min-width: 200px;
+	min-height: 96%;
+}
+
+.dropdown-menu li:hover > ul {
+	display: block;
+}
+
+.dropdown-menu li ul li a {
+	padding: 8px 15px;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+.dropdown-menu li {
+	text-decoration: none !important;
+	list-style: none;
+	color: white;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li ul li a:hover {
+	background: #196b3c;
 	color: white;
 }
 
