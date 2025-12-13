@@ -31,11 +31,17 @@
 
 			<div class="divider"><span>OSE</span></div>
 
-			<form class="login-form">
-				<label for="email">Email</label>
-				<input type="email" placeholder="Shkruaj email-in tënd" id="email" name="email">
-				<label for="password">Fajlëkalimi</label>
-				<input type="password" id="password" name="password" placeholder="Shkruaj fjalëkalimin-in tënd" />
+			<form class="login-form" novalidate>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" placeholder="Shkruaj email-in tënd" id="email" name="email">
+					<div id="emailErrorMsg"></div>
+				</div>
+				<div>
+					<label for="password">Fajlëkalimi</label>
+					<input type="password" id="password" name="password" placeholder="Shkruaj fjalëkalimin-in tënd" />
+					<div id="passwordErrorMsg"></div>
+				</div>
 				<p class="forgot"><a href="">Keni harraru fjalëkalimin?</a></p>
 				<button type="submit" class="sign-in">Kyçu</button>
 				<p class="reg">Nuk keni llogari? <a href="./regjistrohu.html">Regjistrohu!</a></p>

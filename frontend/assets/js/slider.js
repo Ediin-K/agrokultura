@@ -5,6 +5,6 @@ const logos = Array.from(track.children);
 
 // infinte loop per logot
 for (logo of logos) {
-	const clone = logo.cloneNode(true);
+	const clone = logo.cloneNode(false);
 	track.appendChild(clone);
 }
