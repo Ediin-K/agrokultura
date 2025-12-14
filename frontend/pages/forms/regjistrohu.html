@@ -22,43 +22,61 @@
 
 			<form class="register-form" novalidate>
 				<div class="form-fields">
-					<div>
-						<label for="fullname">Emri i plotë</label>
-						<input type="text" id="fullname" name="fullname" placeholder="Shkruaj emrin dhe mbiemrin"
-							required />
-
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" placeholder="Shkruaj email-in tënd" required />
-
-						<label for="password">Fjalëkalimi</label>
-						<input type="password" id="password" name="password" placeholder="Krijo një fjalëkalim" required
-							minlength="8" />
-
-						<label for="confirm-password">Konfirmo fjalëkalimin</label>
-						<input type="password" id="confirm-password" name="confirm-password"
-							placeholder="Përsërit fjalëkalimin" required minlength="8" />
+					<div class="first-part">
+						<div>
+							<label for="fullname">Emri i plotë</label>
+							<input type="text" id="fullname" name="fullname" placeholder="Shkruaj emrin dhe mbiemrin"
+								required />
+							<div class="error-msg" id="fullnameErrorMsg"></div>
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Shkruaj email-in tënd" required />
+							<div class="error-msg" id="emailErrorMsg"></div>
+						</div>
+						<div>
+							<label for="password">Fjalëkalimi</label>
+							<input type="password" id="password" name="password" placeholder="Krijo një fjalëkalim"
+								required minlength="8" />
+							<div class="error-msg" id="passwordErrorMsg"></div>
+						</div>
+						<div>
+							<label for="confirm-password">Konfirmo fjalëkalimin</label>
+							<input type="password" id="confirm-password" name="confirm-password"
+								placeholder="Përsërit fjalëkalimin" required minlength="8" />
+							<div class="error-msg" id="confirmPasswordErrorMsg"></div>
+						</div>
 					</div>
-					<div>
-						<label for="phone">Numri i telefonit</label>
-						<input type="tel" id="phone" name="phone" placeholder="Shkruaj numrin e telefonit" required />
-
-						<label for="address">Adresa</label>
-						<input type="text" id="address" name="address" class="address-field"
-							placeholder="Rruga, nr., hyrja" required />
-
-						<label for="city">Qyteti</label>
-						<input type="text" id="city" name="city" placeholder="P.sh. Prishtinë" required />
-
-						<label for="zip">Kodi postar</label>
-						<input type="text" id="zip" name="zip" placeholder="P.sh. 10000" required />
+					<div class="second-part">
+						<div><label for="phone">Numri i telefonit</label>
+							<input type="tel" id="phone" name="phone" placeholder="Shkruaj numrin e telefonit"
+								required />
+							<div class="error-msg" id="phoneErrorMsg"></div>
+						</div>
+						<div><label for="address">Adresa</label>
+							<input type="text" id="address" name="address" class="address-field"
+								placeholder="Rruga, nr., hyrja" required />
+							<div class="error-msg" id="addressErrorMsg"></div>
+						</div>
+						<div><label for="city">Qyteti</label>
+							<input type="text" id="city" name="city" placeholder="P.sh. Prishtinë" required />
+							<div class="error-msg" id="cityErrorMsg"></div>
+						</div>
+						<div><label for="zip">Kodi postar</label>
+							<input type="text" id="zip" name="zip" placeholder="P.sh. 10000" required />
+							<div class="error-msg" id="zipErrorMsg"></div>
+						</div>
 					</div>
 				</div>
 
 				<div class="terms">
-					<input type="checkbox" id="terms" required />
-					<label for="terms">Pranoj <a href="../policies/terms-conditions.html">kushtet</a> dhe <a
-							href="../policies/policy.html">politikat e
-							privatësisë</a></label>
+					<div>
+						<input type="checkbox" id="terms" required />
+						<label for="terms">Pranoj <a href="../policies/terms-conditions.html">kushtet</a> dhe <a
+								href="../policies/policy.html">politikat e
+								privatësisë</a></label>
+					</div>
+					<div class="error-msg" id="termsErrorMsg"></div>
 				</div>
 
 				<button type="submit" class="sign-up">Regjistrohu</button>

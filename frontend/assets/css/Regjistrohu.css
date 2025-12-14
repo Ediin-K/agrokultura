@@ -41,6 +41,10 @@ body {
 	color: white;
 }
 
+#termsErrorMsg {
+	margin-left: 25px;
+}
+
 /* BACKGROUND FLOATING EFFECT */
 @keyframes gradientBG {
 	0% {
@@ -128,6 +132,7 @@ body::after {
 	justify-content: center;
 	align-items: center;
 	text-align: left;
+	gap: 15px;
 }
 
 .terms {
@@ -136,9 +141,7 @@ body::after {
 	align-items: center;
 	gap: 0;
 	width: 100%;
-}
-
-.terms label {
+	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
@@ -173,11 +176,30 @@ h2 {
 /* INPUTS */
 .register-form input {
 	padding: 12px;
-	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	width: 100%;
 	font-size: 16px;
+}
+
+.first-part {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex: 1;
+}
+
+.error-msg {
+	display: block;
+	font-size: 12px;
+	color: red;
+}
+
+.second-part {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex: 1;
 }
 
 .register-form {
@@ -316,6 +338,10 @@ input[type="checkbox"] {
 
 	body {
 		margin-top: 15%;
+	}
+
+	.terms {
+		flex-direction: column;
 	}
 }
 
