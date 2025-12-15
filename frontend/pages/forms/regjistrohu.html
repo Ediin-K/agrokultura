@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regjistrohu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/Regjistrohu.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Regjistrohu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../../assets/css/Regjistrohu.css" />
-</head>
+  <body>
+    <div class="wrapper">
+      <a href="../../../index.html" class="back-btn"
+        ><i class="bi bi-chevron-left"></i>&nbsp; Back</a
+      >
+      <div class="form-box">
+        <h2>Krijo një llogari</h2>
+        <p class="subtitle">Plotëso të dhënat për t'u regjistruar</p>
 
-<body>
-  <div class="wrapper">
-    <a href="../../../index.html" class="back-btn"><i class="bi bi-chevron-left"></i>&nbsp; Back</a>
-    <div class="form-box">
-      <h2>Krijo një llogari</h2>
-      <p class="subtitle">Plotëso të dhënat për t'u regjistruar</p>
-
-      <div class="social-login">
-        <button class="social google">
-          <i class="fab fa-google"></i><span>Regjistrohu me Google</span>
-        </button>
-        <button class="social facebook">
-          <i class="fab fa-facebook-f"></i><span>Regjistrohu me Facebook</span>
-        </button>
-        <button class="social apple">
-          <i class="fab fa-apple"></i><span>Regjistrohu me Apple</span>
-        </button>
-      </div>
-
-      <div class="divider"><span>OSE</span></div>
-
-      <form class="register-form">
-        <input type="text" placeholder="Emri i plotë" required />
-        <input type="email" placeholder="Emaili" required />
-        <input type="password" placeholder="Fjalëkalimi" required />
-        <input type="password" placeholder="Përsërit fjalëkalimin" required />
-        <input type="number" placeholder="Numri i telefonit" required />
-        <!-- <input type="text" placeholder="Rruga / Adresa" required />
+        <div class="social-login">
+          <button class="social google">
+            <i class="fab fa-google"></i><span>Regjistrohu me Google</span>
+          </button>
+          <button class="social facebook">
+            <i class="fab fa-facebook-f"></i
+            ><span>Regjistrohu me Facebook</span>
+          </button>
+          <button class="social apple">
+            <i class="fab fa-apple"></i><span>Regjistrohu me Apple</span>
+          </button>
+        </div>
+        <div class="divider"><span>OSE</span></div>
+        <form class="register-form">
+          <input type="text" placeholder="Emri i plotë" required />
+          <input type="email" placeholder="Emaili" required />
+          <input type="password" placeholder="Fjalëkalimi" required />
+          <input type="password" placeholder="Përsërit fjalëkalimin" required />
+          <input type="number" placeholder="Numri i telefonit" required />
+          <!-- <input type="text" placeholder="Rruga / Adresa" required />
         <input type="text" placeholder="Qyteti" required /> -->
-        <button type="submit" class="create-account">Krijo llogari</button>
-      </form>
+          <button type="submit" class="create-account">Krijo llogari</button>
+        </form>
+      </div>
+      <div class="info-box">
+        <h2>Mirë se vini!</h2>
+        <p class="subtitle">Nëse keni llogari, mund të kyçeni direkt</p>
+        <a href="./login.html"><button class="back-login">Kthehu</button></a>
+      </div>
     </div>
-
-    <div class="info-box">
-      <h2>Mirë se vini!</h2>
-      <p class="subtitle">Nëse keni llogari, mund të kyçeni direkt</p>
-      <a href="./login.html"><button class="back-login">Kthehu</button></a>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kyçu & Regjistrohu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/Login.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kyçu & Regjistrohu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../../assets/css/Login.css" />
-</head>
+  <body>
+    <div class="wrapper">
+      <a href="../../../index.html" class="back-btn"
+        ><i class="bi bi-chevron-left"></i>&nbsp; Back</a
+      >
+      <div class="login-box">
+        <h2>Kyçu në llogarinë tënde</h2>
+        <p class="subtitle">Kyçu përmes rrjeteve sociale</p>
 
-<body>
-  <div class="wrapper">
-    <a href="../../../index.html" class="back-btn"><i class="bi bi-chevron-left"></i>&nbsp; Back</a>
-    <div class="login-box">
-      <h2>Kyçu në llogarinë tënde</h2>
-      <p class="subtitle">Kyçu përmes rrjeteve sociale</p>
+        <div class="social-buttons">
+          <a href="/index.html"
+            ><button class="social facebook">
+              <i class="fab fa-facebook-f"></i></button
+          ></a>
+          <a href="/index.html"
+            ><button class="social google">
+              <i class="fab fa-google-plus-g"></i></button
+          ></a>
+          <a href="/index.html"
+            ><button class="social apple">
+              <i class="fab fa-apple"></i></button
+          ></a>
+        </div>
 
-      <div class="social-buttons">
-        <button class="social facebook">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button class="social google">
-          <i class="fab fa-google-plus-g"></i>
-        </button>
-        <button class="social apple">
-          <i class="fab fa-apple"></i>
-        </button>
+        <div class="divider"><span>OSE</span></div>
+
+        <form class="login-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Fjalëkalimi" required />
+          <a href="/index.html"
+            ><button type="submit" class="sign-in">Kyçu</button></a
+          >
+        </form>
+
+        <!-- TERMS SECTION -->
+        <div class="legal-links">
+          <a href="../policies/terms-conditions.html">Termat e Përdorimit</a>
+          <span>•</span>
+          <a href="../policies/policy.html">Politika e Privatësisë</a>
+          <span>•</span>
+          <a href="../policies/cookie.html">Cookie Policy</a>
+          <span>•</span>
+          <a href="../policies/contactInfo.html">Informacione Kontakti</a>
+        </div>
       </div>
 
-      <div class="divider"><span>OSE</span></div>
+      <div class="signup-box">
+        <h2>Jeni të rinj këtu?</h2>
+        <p class="subtitle">
+          Regjistrohuni dhe zbuloni një mori mundësish të reja!
+        </p>
 
-      <form class="login-form">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Fjalëkalimi" required />
-        <button type="submit" class="sign-in">Kyçu</button>
-      </form>
-
-      <!-- TERMS SECTION -->
-      <div class="legal-links">
-        <a href="../policies/terms-conditions.html">Termat e Përdorimit</a>
-        <span>•</span>
-        <a href="../policies/policy.html">Politika e Privatësisë</a>
-        <span>•</span>
-        <a href="../policies/cookie.html">Cookie Policy</a>
-        <span>•</span>
-        <a href="../policies/contactInfo.html">Informacione Kontakti</a>
+        <a href="./regjistrohu.html">
+          <button class="sign-up">Regjistrohu</button>
+        </a>
+        <button class="explore">Eksploro</button>
       </div>
     </div>
-
-    <div class="signup-box">
-      <h2>Jeni të rinj këtu?</h2>
-      <p class="subtitle">
-        Regjistrohuni dhe zbuloni një mori mundësish të reja!
-      </p>
-
-      <a href="./regjistrohu.html">
-        <button class="sign-up">Regjistrohu</button>
-      </a>
-      <button class="explore">Eksploro</button>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
